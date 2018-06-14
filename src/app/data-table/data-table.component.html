@@ -1,0 +1,104 @@
+
+  <div class="mat-elevation-z8 data-table">
+ <span class="h2">Список поромiв</span> 
+  <mat-table #table [dataSource]="dataSource" matSort aria-label="Elements">
+
+    <!-- Id Column -->
+  
+    
+        <ng-container matColumnDef="t1" >
+      <mat-header-cell *matHeaderCellDef  class="colh"> <b mat-sort-header>РЛ с/з</b> 
+      <form class="example-form">  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Пошук..." value="">  </mat-form-field></form> </mat-header-cell><mat-cell *matCellDef="let row" class="col">{{row.t1}}</mat-cell>
+    </ng-container>
+ 
+ 
+ 
+ 
+ 
+ 
+     <ng-container matColumnDef="t2" >
+      <mat-header-cell *matHeaderCellDef class="colh"> <b mat-sort-header>Код порту</b> 
+      <form class="example-form">  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Пошук..." value="">  </mat-form-field></form> </mat-header-cell><mat-cell *matCellDef="let row" class="col">{{row.t2}}</mat-cell>
+    </ng-container>
+
+  
+ 
+   
+ <ng-container matColumnDef="t3">
+      <mat-header-cell *matHeaderCellDef class="colh"> <b mat-sort-header>Назва судна</b> 
+      <form class="example-form">  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Пошук..." value="">  </mat-form-field></form> </mat-header-cell><mat-cell *matCellDef="let row" class="col">{{row.t3}}</mat-cell>
+    </ng-container>
+ 
+ 
+ 
+  <ng-container matColumnDef="t4">
+      <mat-header-cell *matHeaderCellDef class="colh"> <b mat-sort-header>Найменування агента</b> 
+      <form class="example-form">  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Пошук..." value="">  </mat-form-field></form> </mat-header-cell><mat-cell *matCellDef="let row" class="col">{{row.t4}}</mat-cell>
+    </ng-container>
+  
+      
+      <ng-container matColumnDef="t5" >
+      <mat-header-cell *matHeaderCellDef class="colh"> <b mat-sort-header>Планований прихiд/вихiд</b> 
+     <mat-form-field>
+  <input matInput [matDatepicker]="picker" placeholder="Пошук..."> 
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field> </mat-header-cell><mat-cell class="flex-row col" *matCellDef="let row">
+   
+   <span class="icons">   <i class="material-icons">arrow_downward</i>
+<i class="material-icons">arrow_upward</i> </span>
+   <span class="text">
+   {{row.t5}}</span></mat-cell>
+    </ng-container> 
+    
+     
+    
+      <ng-container matColumnDef="t6" >
+      <mat-header-cell *matHeaderCellDef class="colh"> <b mat-sort-header>Фактичний прихiд/вихiд</b> 
+       <mat-form-field>
+  <input matInput [matDatepicker]="picker" placeholder="Пошук..."> 
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>  </mat-header-cell><mat-cell class="flex-row col" *matCellDef="let row">
+   
+   <span class="icons">
+   <i class="material-icons">arrow_downward</i>
+<i class="material-icons">arrow_upward</i>
+   </span>
+   <span class="text">
+   {{row.t6}}</span></mat-cell>
+    </ng-container> 
+    
+    
+          <ng-container matColumnDef="t7" >
+      <mat-header-cell *matHeaderCellDef class="colh"> <b mat-sort-header>Остання подача документiв</b> 
+     <mat-form-field>
+  <input matInput [matDatepicker]="picker" placeholder="Пошук..."> 
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field> </mat-header-cell><mat-cell *matCellDef="let row" class="last-col col"><span>{{row.t7}}</span> <button mat-button><i class="material-icons">
+file_copy
+</i></button> 
+</mat-cell>
+    </ng-container>
+    
+     
+    
+      
+    
+    
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+  <mat-paginator #paginator
+    [length]="dataSource.data.length"
+    [pageIndex]="0"
+    [pageSize]="5"
+    [pageSizeOptions]="[2, 5, 10]">
+  </mat-paginator>
+</div>

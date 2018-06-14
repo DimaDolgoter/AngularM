@@ -1,0 +1,386 @@
+.data-table{
+ min-width: 1000px !important; 
+    margin: 20px auto;
+}
+
+mat-footer-row, mat-header-row, mat-row {
+    display: flex;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-style: solid;
+    align-items: center;
+    box-sizing: border-box;
+   /* padding: 20px 0 0 0;*/
+}
+ 
+mat-cell, mat-footer-cell, mat-header-cell {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    overflow: hidden; 
+    word-wrap: break-word;
+    min-height: inherit;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: self-start;
+}
+
+ .mat-form-field { 
+    display: block;
+    position: relative;
+    flex: auto;
+    min-width: 0;
+   width: 90% !important ;
+}
+.mat-form-field-appearance-legacy .mat-form-field-prefix .mat-datepicker-toggle-default-icon, .mat-form-field-appearance-legacy .mat-form-field-suffix .mat-datepicker-toggle-default-icon {
+    width: 1.5em  !important;
+}
+
+.last-col{
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    word-wrap: break-word;
+    min-height: inherit;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button {
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0 0 0 10px;
+    min-width: 60px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 2px;
+    overflow: visible;
+}
+
+
+
+.text{
+    line-height: 2;
+      padding-right: 54px;
+}
+.mat-cell.cdk-column-t5,.mat-cell.cdk-column-t6{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    word-wrap: break-word;
+    min-height: inherit;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+.mat-sort-header-container{
+    min-height: 30px;
+}
+
+.colh b{
+    min-height: 30px;
+}
+
+.colh:nth-child(1){ 
+     max-width:160px !important;
+         margin-right: 15px; 
+}
+.colh:nth-child(2){ 
+      max-width:160px !important; 
+      margin-right: 15px;
+} 
+.colh:nth-child(3){ 
+      max-width:160px !important;   
+      margin-right: 15px;
+}
+
+.colh:nth-child(4){  
+     max-width: 250px !important;    
+      margin-right: 15px; 
+}
+.colh:nth-child(5){  
+     max-width: 250px !important;   
+      margin-right: 15px;
+}
+.colh:nth-child(6){  
+    max-width: 250px !important;   
+      margin-right: 15px;
+} 
+
+.colh:nth-child(7){  
+  max-width: 12%  !important;    
+      margin-right: 30px; 
+}
+
+
+
+
+.col{
+        font-size: 16px;
+   /*  padding: 10px; */
+}
+.col:nth-child(1){ 
+        padding-left: 24px;
+     margin-right: 15px;
+     max-width:160px !important;   
+}
+
+.col:nth-child(2){ 
+  max-width:160px !important; 
+  margin-right: 15px;
+}
+
+.col:nth-child(3){ 
+  max-width:160px !important;  
+  margin-right: 15px;
+} 
+ 
+.col:nth-child(4){ 
+max-width: 250px !important;
+  margin-right: 10px;
+
+} 
+
+  .col:nth-child(5){ 
+max-width: 250px !important;
+  
+  margin-right: 15px;  
+} 
+  .col:nth-child(6){  
+ max-width: 250px !important;
+  margin-right: 15px; 
+} 
+
+
+/*  .col:nth-child(7){  
+ max-width: 16% !important;
+  margin-right: 15px; 
+} */
+.mat-button{
+  width: 20px !important;
+} 
+.colh .example-form{
+    width: 100%;
+}
+
+
+
+
+@media screen and (min-width: 1078px) and (max-width: 1520px) {
+.text[_ngcontent-c1] {
+    line-height: 2;
+    font-size: 14px;
+     padding-right: 0         ; 
+}
+    
+    .colh:nth-child(1){ 
+     max-width:100px !important;
+         margin-right: 15px; 
+}
+.colh:nth-child(2){ 
+      max-width:100px !important; 
+      margin-right: 15px;
+} 
+.colh:nth-child(3){ 
+      max-width:100px !important;   
+      margin-right: 15px;
+}
+
+.colh:nth-child(4){  
+     max-width: 250px !important;    
+      margin-right: 15px; 
+}
+.colh:nth-child(5){  
+     max-width: 250px !important;   
+      margin-right: 15px;
+}
+.colh:nth-child(6){  
+    max-width: 250px !important;   
+      margin-right: 15px;
+} 
+
+.colh:nth-child(7){  
+  max-width: 12%  !important;    
+      margin-right: 30px; 
+}
+
+
+
+
+.col{
+        font-size: 16px;
+   /*  padding: 10px; */
+}
+.col:nth-child(1){ 
+        padding-left: 24px;
+     margin-right: 15px;
+     max-width:100px !important;   
+}
+
+.col:nth-child(2){ 
+  max-width:100px !important; 
+  margin-right: 15px;
+}
+
+.col:nth-child(3){ 
+  max-width:100px !important;  
+  margin-right: 15px;
+} 
+ 
+.col:nth-child(4){ 
+max-width: 250px !important;
+  margin-right: 10px;
+
+} 
+
+  .col:nth-child(5){ 
+max-width: 250px !important;
+  
+  margin-right: 15px;  
+} 
+  .col:nth-child(6){  
+ max-width: 250px !important;
+  margin-right: 15px; 
+} 
+
+    
+    
+    
+    
+}
+
+
+
+
+@media screen and (min-width: 1px) and (max-width: 1078px) {
+.text[_ngcontent-c1] {
+    line-height: 2;
+    font-size: 14px;
+     padding-right: 0         ; 
+}
+    
+    .colh:nth-child(1){ 
+     max-width:80px !important;
+         margin-right: 15px; 
+}
+.colh:nth-child(2){ 
+      max-width:80px !important; 
+      margin-right: 15px;
+} 
+.colh:nth-child(3){ 
+      max-width:80px !important;   
+      margin-right: 15px;
+}
+
+.colh:nth-child(4){  
+     max-width: 250px !important;    
+      margin-right: 15px; 
+}
+.colh:nth-child(5){  
+     max-width: 250px !important;   
+      margin-right: 15px;
+}
+.colh:nth-child(6){  
+    max-width: 250px !important;   
+      margin-right: 15px;
+} 
+
+.colh:nth-child(7){  
+  max-width: 12%  !important;    
+      margin-right: 30px; 
+}
+
+
+
+
+.col{
+        font-size: 16px;
+   /*  padding: 10px; */
+}
+.col:nth-child(1){ 
+        padding-left: 24px;
+     margin-right: 15px;
+     max-width:80px !important;   
+}
+
+.col:nth-child(2){ 
+  max-width:80px !important; 
+  margin-right: 15px;
+}
+
+.col:nth-child(3){ 
+  max-width:80px !important;  
+  margin-right: 15px;
+} 
+ 
+.col:nth-child(4){ 
+max-width: 250px !important;
+  margin-right: 10px;
+
+} 
+
+  .col:nth-child(5){ 
+max-width: 250px !important;
+  
+  margin-right: 15px;  
+  margin-left: 15px;  
+} 
+  .col:nth-child(6){  
+ max-width: 250px !important;
+  margin-right: 15px; 
+} 
+
+    
+    
+    
+    
+}
+
+
+
+
+
+
+.mat-form-field-infix input{
+        width: 100% !important;  
+
+}
+.mat-form-field-infix {
+    display: block;
+    position: relative;
+    flex: auto;
+        width: 50px !important;  
+
+    min-width: 0;
+}.mat-datepicker-content .mat-calendar-next-button, .mat-datepicker-content .mat-calendar-previous-button, .mat-datepicker-toggle {
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, .54);
+}
+
+.h2{
+    font-weight: bold;
+    padding: 10px 24px; 
+    display: block;
+}
